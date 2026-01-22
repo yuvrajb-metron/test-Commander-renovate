@@ -27,7 +27,7 @@ jobs:
           COMMANDER_VERSION=`python3 -c "import keepercommander.__init__ as init; print(init.__version__);"`
           echo "COMMANDER_VERSION=$COMMANDER_VERSION" >> $GITHUB_ENV
         shell: bash
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           name: KeeperCommanderWheel
           retention-days: 3
